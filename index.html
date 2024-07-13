@@ -84,8 +84,10 @@
                         this.classList.toggle('bi-sun');
                         let theme = document.documentElement.getAttribute('data-bs-theme');
                         if (theme === 'dark') {
+                            document.body.style.backgroundImage = "url('img/bglight.png')";
                             document.documentElement.removeAttribute('data-bs-theme');
                         } else {
+                            document.body.style.backgroundImage = "url('img/bgdark.png')";
                             document.documentElement.setAttribute('data-bs-theme', 'dark');
                         }
                     });
