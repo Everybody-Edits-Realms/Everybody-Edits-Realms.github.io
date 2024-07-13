@@ -29,21 +29,6 @@
     <!-- navbar -->
     <div class="container-fluid">
         
-        <div class="dark-mode-toggle">
-            <i id="darkModeIcon" class="bi bi-sun"></i> 
-        </div>
-        <script>
-            document.getElementById('darkModeIcon').addEventListener('click', function () {
-                this.classList.toggle('bi-moon');
-                this.classList.toggle('bi-sun');
-                let theme = document.documentElement.getAttribute('data-bs-theme');
-                if (theme === 'dark') {
-                    document.documentElement.removeAttribute('data-bs-theme');
-                } else {
-                    document.documentElement.setAttribute('data-bs-theme', 'dark');
-                }
-            });
-        </script>
     </div>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -67,6 +52,21 @@
                         <a href="#" class="nav-link"><i class="bi bi-journal-bookmark"></i> Rules</a>
                     </li>
                 </ul>
+                <div class="dark-mode-toggle">
+                    <i id="darkModeIcon" class="bi bi-sun"></i> 
+                </div>
+                <script>
+                    document.getElementById('darkModeIcon').addEventListener('click', function () {
+                        this.classList.toggle('bi-moon');
+                        this.classList.toggle('bi-sun');
+                        let theme = document.documentElement.getAttribute('data-bs-theme');
+                        if (theme === 'dark') {
+                            document.documentElement.removeAttribute('data-bs-theme');
+                        } else {
+                            document.documentElement.setAttribute('data-bs-theme', 'dark');
+                        }
+                    });
+                </script>
             </div>
         </div>
     </nav>
