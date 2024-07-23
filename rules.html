@@ -56,6 +56,9 @@
     }
     </style>
     <script type="text/javascript">
+        $("#popupRules").click(function (){
+            $('#myModal').modal('show');
+        });
     $(window).on('load', function() {
         $('#myModal').modal('show');
     });
@@ -145,6 +148,7 @@
     </nav>
     <!-- text -->
     <div class="container"><br>
+        <button type="button" class="btn btn-secondary" id="popupRules">Show Rules</button>
         <div class="modal" id="myModal">
             <div class="modal-dialog">
               <div class="modal-content">
