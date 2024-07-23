@@ -56,12 +56,14 @@
     }
     </style>
     <script type="text/javascript">
-        $("#popupRules").click(function (){
+        $(document).ready(function() {
+            $('#rulePopup').click(function() {
+                $('#myModal').modal('show');
+            });
+        });
+        $(window).on('load', function() {
             $('#myModal').modal('show');
         });
-    $(window).on('load', function() {
-        $('#myModal').modal('show');
-    });
         function getCookie(cname) {
             let name = cname + "=";
             let decodedCookie = decodeURIComponent(document.cookie);
@@ -148,7 +150,7 @@
     </nav>
     <!-- text -->
     <div class="container"><br>
-        <button type="button" class="btn btn-secondary" id="popupRules">Show Rules</button>
+        <button type="button" class="btn btn-secondary" id="rulePopup">Show Rules</button>
         <div class="modal" id="myModal">
             <div class="modal-dialog">
               <div class="modal-content">
