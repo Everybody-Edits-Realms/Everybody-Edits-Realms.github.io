@@ -53,6 +53,37 @@
         max-height: 100%;
         max-width: 100%;
     }
+    .cookie-consent{
+        position: fixed;
+        bottom: 8px;
+        left: 20px;
+        width: 260px;
+        padding-top: 7px;
+        height: 83px;
+        color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #000;
+        line-height: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        background: #292929;
+        z-index: 120;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .allow-button{
+      height: 20px;
+        width: 104px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 10px;
+        border-radius: 3px;
+        border: 1px solid green;
+        background-color: green;
+    }
     </style>
     <script>
         function getCookie(cname) {
@@ -145,6 +176,13 @@
                 <h2>Welcome to the official site for Everybody Edits Realms!</h2>
                 <br>Everybody Edits Realms is a free-to-play, online multiplayer game that allows players to create and share their own worlds!<br>
                 <br>To start playing, simply click <a href="download.html" class="link">download</a>! This link will take you directly to the download page, and you can read all the information about the game inside!</div>
+        </div>
+    </div>
+    <div class="cookie-consent">
+        <span>This site uses cookies to enhance user experience. see<a href="#" class="ml-1 text-decoration-none">Privacy policy</a> </span>
+        <div class="mt-2 d-flex align-items-center justify-content-center g-2">
+          <button class="allow-button mr-1">Allow cookies</button>
+          <button class="allow-button">cancel</button>
         </div>
     </div>
     <footer id="footer"></footer>
